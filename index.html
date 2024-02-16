@@ -84,15 +84,17 @@
             </div>
             <!-- two btn  -->
             <div class="flex justify-between w-1/2 mx-auto mb-10">
+                <!-- display life  -->
                 <button class="btn bg-pink-300">
                     Life
                     <i class="fa-solid fa-heart-pulse"></i>
-                    <span>1</span>
+                    <span id="life">5</span>
                 </button>
+                <!-- display score  -->
                 <button class="btn bg-pink-300">
                     Score
                     <i class="fa-solid fa-hand-holding-dollar"></i>
-                    <span>1</span>
+                    <span id="current-score">0</span>
                 </button>
 
             </div>
@@ -100,15 +102,16 @@
 
 
         <!-- Score Section  -->
-        <section class="score hidden">
+        <section id="score-page" class="score hidden">
             <div class="flex flex-col justify-center items-center min-h-screen ">
                 <div class="border bg-purple-500 rounded-2xl text-center p-12">
+                    <h4 class="text-3xl">Game Over !</h4>
                     <h1 class="text-white mb-6">
                         <span class="text-5xl font-bold">Score:</span>
-                        <span class="text-5xl">14</span>
+                        <span id="gameScore" class="text-5xl">14</span>
                     </h1>
-                    <button class="btn mb-6">Play Again</button>
-                    <p class="text-white">Practice will make you pro</p>
+                    <button onclick="play()" class="btn mb-6">Play Again</button>
+                    <p class="text-white">Practice will make you pro...</p>
                 </div>
             </div>
         </section>
